@@ -50,7 +50,7 @@ int main()
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
 
-		ImGui::Begin("Hello");
+		ImGui::Begin("Hello"); // 		ImGui::Begin("Hello", nullptr, ImGuiWindowFlags_NoCollapse); will remove the collapse button.
 		ImGui::Text("World");
 
 		ImGui::SliderFloat("Red", &Red, 0.0f, 1.0f);
