@@ -1,15 +1,15 @@
 # Learn-ImGui
 
-## 0_demo
+# 0: Demo
 ![0_demo](0_demo/docs/0_demo.png)
 
-## 1_hello_world
+# 1: Hello world
 ![1_hello_world](1_hello_world/docs/1_hello_world.png)
 
-## 2_basic_rgb
+# 2: Basic RGB
 ![2_basic_rgb](2_basic_rgb/docs/2_basic_rgb.png)
 
-## 3_basic_docking
+# 3: Basic Docking
 ![3_basic_docking](3_basic_docking/docs/3_basic_docking.png)
 
 This is the same window as before, except that now, "Hello World" window is docked directly onto our OpenGL Window.<br>
@@ -29,7 +29,7 @@ ImGui::PopStyleVar(2);
 Note: From the picture, it should be pretty obvious that the background color is now red.<br>
 However, since ImGui is now docked and sits on top of the OpenGL window, it's original color is only seen through the mercy of ImGui's window transparency.
 
-## 4_window_flags
+# 4: Window Flags
 `ImGui::Begin` allows a few window flags passed on to the .<br>
 ```C++
 ImGuiWindowFlags window_flags = 0;
