@@ -31,6 +31,7 @@ However, since ImGui is now docked and sits on top of the OpenGL window, it's or
 
 # 4: Window Flags
 ![4_window_flags](4_window_flags/docs/4_window_flags.png)
+
 `ImGui::Begin` allows a few window flags passed on to the .<br>
 ```C++
 ImGuiWindowFlags window_flags = 0;
