@@ -30,6 +30,7 @@ Note: From the picture, it should be pretty obvious that the background color is
 However, since ImGui is now docked and sits on top of the OpenGL window, it's original color is only seen through the mercy of ImGui's window transparency.
 
 # 4: Window Flags
+![4_window_flags](4_window_flags/docs/4_window_flags.png)
 `ImGui::Begin` allows a few window flags passed on to the .<br>
 ```C++
 ImGuiWindowFlags window_flags = 0;
@@ -50,5 +51,3 @@ ImGui::Begin("Title", nullptr, window_flags);
 ```
 The second argument allows for a window's close button to be either enabled/disabled; a `nullptr` will let the second parameter to be ignored.<br>
 I disabled a few parameters; the window looks a little interesting than the previous ones.
-
-![4_window_flags](4_window_flags/docs/4_window_flags.png)
