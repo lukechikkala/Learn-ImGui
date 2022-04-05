@@ -19,7 +19,7 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 	int window_width 	= 400; 	int window_height	= 200;
-	GLFWwindow* window = glfwCreateWindow(window_width, window_height, "Background Color", NULL, NULL); // Replace first NULL with 'glfwGetPrimaryMonitor()' to run Full Screen on First Monitor.
+	GLFWwindow* window = glfwCreateWindow(window_width, window_height, "IP Info", NULL, NULL); // Replace first NULL with 'glfwGetPrimaryMonitor()' to run Full Screen on First Monitor.
 	if (window == NULL)
 	{
 		std::cout << "Failed" << std::endl;
@@ -83,7 +83,7 @@ int main()
 		// --> Menu Bar
 		if (ImGui::BeginMenuBar())
 		{
-			if (ImGui::BeginMenu("Menu Item"))
+			if (ImGui::BeginMenu("Menu"))
 			{
 				if (ImGui::MenuItem("Clear Screen"))
 				{
@@ -96,6 +96,10 @@ int main()
 		if (ImGui::Button("Print IP Address"))
 		{
 			system("ifconfig en0 | grep mas | sed -E 's/.*inet //' | sed -E 's/ netmask.*//'");
+		}
+		if (ImGui::Button("Print Subnet Mask"))
+		{
+			system("ipconfig getoption en0 subnet_mask");
 		}
 		ImGui::End();
 		// --> Program End
