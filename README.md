@@ -52,3 +52,11 @@ ImGui::Begin("Title", nullptr, window_flags);
 ```
 The second argument allows for a window's close button to be either enabled/disabled; a `nullptr` will let the second parameter to be ignored.<br>
 I disabled a few parameters; the window looks a little interesting than the previous ones.
+
+# 5: Menu & Button
+![5_menu_&_button](5_menu_&_button/docs/5_menu_&_button.gif)
+
+Here is an example of how to create a menu item and a button.<br>
+The example also demonstrates how to assign a function to these objects.<br>
+In this case, I called some bash commands, but in general these can be used for several other things like calling other windows, etc.
+
