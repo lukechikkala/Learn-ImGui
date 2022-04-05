@@ -54,8 +54,9 @@ The second argument allows for a window's close button to be either enabled/disa
 I disabled a few parameters; the window looks a little interesting than the previous ones.
 
 # 5: Menu & Button
-![5_menu_&_button](5_menu_&_button/docs/5_menu_&_button.gif)
-![tiny demo](https://youtu.be/k6_Xa8qQtKQ)
+![5_menu_&_button](5_menu_&_button/docs/5_menu_&_button.png)
+
+[Demo](https://youtu.be/k6_Xa8qQtKQ)
 
 Here is an example of how to create a menu item and a button.<br>
 The example also demonstrates how to assign a function to these objects.<br>
